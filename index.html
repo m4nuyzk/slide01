@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slide Interativo - Funções</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Música de fundo -->
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/07/30/audio_5efc0c09f8.mp3?filename=upbeat-pop-14775.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicBtn">🎵 Música: OFF</button>
+
+  <!-- Slides -->
+  <div class="slider" id="slider">
+
+    <!-- Slide 1 -->
+    <div class="slide">
+      <div class="content">
+        <h1>✨ O que é uma Função?</h1>
+        <p>Uma <strong>função</strong> é uma relação entre duas variáveis, onde a cada valor de entrada <strong>(x)</strong> corresponde um único valor de saída <strong>(y)</strong>.</p>
+        <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Função animada">
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div class="content">
+        <h1>🧩 Representação de Função</h1>
+        <p>As funções podem ser representadas por fórmulas, tabelas, gráficos e diagramas.<br>Exemplo: <strong>f(x) = 2x + 1</strong></p>
+        <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Gráfico animado">
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div class="content">
+        <h1>📘 Domínio e Imagem</h1>
+        <p>O <strong>Domínio</strong> é o conjunto dos valores possíveis de <strong>x</strong>.<br>
+        A <strong>Imagem</strong> é o conjunto dos valores que <strong>y</strong> pode assumir.</p>
+        <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" alt="Eixos coordenados">
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+      <div class="content">
+        <h1>📈 Função do 1º Grau</h1>
+        <p>Tem a forma <strong>f(x) = ax + b</strong> e seu gráfico é uma <strong>reta</strong>!  
+        Se <strong>a &gt; 0</strong>, é crescente.  
+        Se <strong>a &lt; 0</strong>, é decrescente.</p>
+        <canvas id="graficoFuncao" width="300" height="300"></canvas>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+      <div class="content">
+        <h1>🌈 Função Quadrática</h1>
+        <p>A <strong>função do 2º grau</strong> tem a forma <strong>f(x) = ax² + bx + c</strong>.  
+        Seu gráfico é uma <strong>parábola</strong> 🌀.</p>
+        <img src="https://media.giphy.com/media/26xBukhvM5b1QG5iI/giphy.gif" alt="Parábola animada">
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+      <div class="content">
+        <h1>🚀 Funções Crescentes e Decrescentes</h1>
+        <p><strong>Crescente:</strong> x aumenta e y também.<br>
+        <strong>Decrescente:</strong> x aumenta e y diminui.</p>
+        <img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" alt="Crescente e decrescente">
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide">
+      <div class="content">
+        <h1>💡 Aplicações das Funções</h1>
+        <p>As funções aparecem em:<br>
+        💰 Finanças<br>🌦️ Meteorologia<br>🚗 Física<br>🧠 Inteligência Artificial</p>
+        <img src="https://media.giphy.com/media/d31w24psGYeekCZy/giphy.gif" alt="Ideia animada">
+      </div>
+    </div>
+
+    <!-- Slide 8 (Quiz) -->
+    <div class="slide">
+      <div class="content">
+        <h1>🎮 Desafio das Funções!</h1>
+        <p><strong>Questão:</strong> Se <strong>f(x) = 2x + 3</strong>, quanto vale <strong>f(4)</strong>?</p>
+
+        <div class="quiz">
+          <button class="quiz-option" data-correct="false">A) 6</button>
+          <button class="quiz-option" data-correct="true">B) 11</button>
+          <button class="quiz-option" data-correct="false">C) 9</button>
+          <button class="quiz-option" data-correct="false">D) 8</button>
+        </div>
+
+        <p id="quizResult"></p>
+        <img src="https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif" alt="Quiz gif">
+      </div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide">
+      <div class="content">
+        <h1>🎉 Parabéns!</h1>
+        <p>Vocês concluíram o trabalho sobre <strong>Funções</strong>!<br>
+        Agora o grupo pode explicar para a turma com estilo 😎</p>
+        <img src="https://media.giphy.com/media/l3vR0QZzRzE6R3Jlu/giphy.gif" alt="Confete">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botões -->
+  <div class="btn-container">
+    <button id="prevBtn">⬅️ Anterior</button>
+    <button id="nextBtn">Próximo ➡️</button>
+  </div>
+
+  <!-- Arquivo JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>

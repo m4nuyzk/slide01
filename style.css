@@ -1,0 +1,140 @@
+/* Fundo animado neon vermelho, preto, cinza, branco e vinho */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #000000, #2b2b2b, #4d0000, #800020, #b30000, #e6e6e6);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  overflow: hidden;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Botão da música */
+#musicBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff003c, #ff6600);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 15px #ff003c;
+  transition: 0.3s;
+}
+#musicBtn:hover {
+  background: linear-gradient(45deg, #ff6600, #ff003c);
+  box-shadow: 0 0 25px #fff;
+}
+
+/* Slides */
+.slider {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  width: 900%;
+  height: 100vh;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Conteúdo centralizado */
+.content {
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff4b4b;
+  text-shadow: 0 0 25px #ff0000, 0 0 45px #ff4b4b;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #ff0000;
+}
+
+/* Botões de navegação */
+.btn-container {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  background: linear-gradient(45deg, #ff003c, #660000);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px;
+  margin: 0 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #ff4b4b;
+}
+button:hover {
+  background: linear-gradient(45deg, #ff6600, #b30000);
+  box-shadow: 0 0 20px #fff;
+}
+
+/* Quiz */
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+.quiz-option {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 2px solid #ff6666;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  width: 80%;
+  max-width: 300px;
+}
+.quiz-option:hover {
+  background: #ff4b4b;
+  box-shadow: 0 0 15px #ff4b4b;
+  cursor: pointer;
+}
+#quizResult {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px #fff;
+}
